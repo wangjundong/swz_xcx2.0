@@ -1,0 +1,27 @@
+<!--pages/order/order.wxml-->
+<view class="container">
+    <view class="top-menu">
+      <text bindtap="getOrder" data-index="0" style="margin-left:178rpx;" class="{{currentIndex == 0 ? 'active-text' : 'text-btn'}}">未完成</text>
+      <text bindtap="getOrder" data-index="1" style="margin-right:178rpx;" class="{{currentIndex == 1 ? 'active-text' : 'text-btn'}}">已完成</text>
+    </view>
+    <scroll-view class="order-list" scroll-y="true" bindscrolltolower="lower" bindscroll="scroll" bindtouchstart='touchStart' bindtouchmove='touchMove' bindtouchend='touchEnd' style="height:{{scroll_view_h}}rpx">
+      <view class="order-item" wx:for="{{orderList}}" wx:key="item">
+          <view class="item-top">
+            <image src="{{item.avatar}}" class="item-l"></image>
+            <view class="item-r">
+              <view class="item-msg">
+                <text style="color:#333333;font-size:32rpx;">{{item.name}}</text>
+                <text style="color:#2ea7e0;font-size:28rpx;">￥{{item.money / 100 + '.00'}}</text>
+              </view>
+              <text class="item-time">报名时间：{{item.time}}</text>
+            </view>
+          </view>
+          <view class="status">
+            <view style="width:calc(100% - 140rpx );"></view>
+            <view class="{{currentIndex == 1 ? 'item-status' : 'item-status-over'}}">{{currentIndex == 0 ? '去支付' : '已完成'}}</view>
+          </view>
+      </view>
+    </scroll-view>
+    <image class="cloud-l" src="/static/center/cloud1.png"></image>
+    <image class="cloud-r" src="/static/center/cloud2.png"></image>
+</view>

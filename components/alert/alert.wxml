@@ -1,0 +1,10 @@
+<!--components/alert.wxml-->
+<view class="alt-all" style="display:{{msg.length>0 ? '' : 'none'}}">
+  <view class="alt">
+    <image wx:if="{{fail}}" style="width:87rpx;height:109rpx;margin-top:40rpx;" src="/static/fail.png"></image>
+    <image wx:else style="width:114rpx;height:131rpx;margin-top:40rpx;" src="/static/success.png"></image>
+    <view class="footer"></view>
+    <text class="msg">{{msg}}</text>
+    <view bindtap="closeAlt" class="btn {{fail ? 'btn-fail' : 'btn-success'}}">我知道了</view>
+  </view>
+</view>

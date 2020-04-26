@@ -1,0 +1,61 @@
+/* pages/mymessage/mymessage.wxss */
+.root {
+  background-color: white;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+}
+
+.city {
+  position: absolute;
+  width: 750rpx;
+  height: 202rpx;
+  left: 0;
+  bottom: 0;
+}
+
+.tuotuo {
+  position: absolute;
+  width: 253rpx;
+  height: 216rpx;
+  right: 0;
+  bottom: 0;
+}
+
+.message_item_root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 12rpx;
+  padding-left: 26rpx;
+}
+
+.message_item {
+  background-color: #fcfaf5;
+  width: 690rpx;
+  height: 140rpx;
+  border-radius: 10rpx;
+  margin-top: 28rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.content {
+  font-size: 24rpx;
+  margin-top: 20rpx;
+  color: #464646;
+  display: flex;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  justify-content: flex-start;
+}
+
+.time {
+  font-size: 20rpx;
+  color: #999999;
+  margin-right: 40rpx;
+  margin-bottom: 20rpx;
+  display: flex;
+  justify-content: flex-end;
+}

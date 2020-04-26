@@ -1,0 +1,4 @@
+<!--pages/certificate/certificate.wxml-->
+<view class="container">
+  <image class="certificate" src="/static/center/certificate.png"></image>
+</view>

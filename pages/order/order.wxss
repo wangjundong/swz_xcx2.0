@@ -1,0 +1,20 @@
+/* pages/order/order.wxss */
+page{width: 100%;height: 100%;}
+.container{width: 100%;height: 100%;margin: 0;padding: 0;}
+.top-menu{width: 100%;height: 66rpx;padding-top: 20rpx;font-size: 32rpx;display: flex;justify-content: space-between;align-content: center;}
+.text-btn{width: 100rpx;line-height: 1;color:#999999;margin-bottom: 20rpx;}
+.active-text{width: 100rpx;line-height: 1;color:#333333;border-bottom: 4rpx solid #2ea7e0;margin-bottom: 20rpx;}
+.order-list{width: calc(100% - 60rpx);margin:0 30rpx;height: 1040rpx;}
+.order-item{width: 100%;height: 220rpx;background-color: #fcfaf5;border-radius: 10rpx;margin-top: 40rpx;display: flex;flex-direction: column;}
+.item-top{display: flex;margin: 32rpx 20rpx 0 32rpx;}
+.item-top .item-l{width: 80rpx;height: 80rpx;border-radius: 50%;margin-right: 32rpx;}
+.item-top .item-r{display: flex;flex-direction: column;width: calc(100% - 112rpx);justify-content: space-between}
+.item-r .item-msg{display: flex;justify-content: space-between;}
+.item-r .item-time{text-align: left;color:#999999;font-size: 24rpx;}
+.status{display: flex;justify-content: space-between;}
+.item-status{color:#999999;font-size: 24rpx;width: 120rpx;height: 40rpx;border-radius: 20rpx;border:1px solid #999999;text-align: center;line-height: 40rpx;margin-right: 20rpx;margin-top: 30rpx;}
+.item-status-over{color:#ffffff;font-size: 24rpx;width: 120rpx;height: 40rpx;border-radius: 20rpx;text-align: center;line-height: 40rpx;margin-right: 20rpx;margin-top: 30rpx;background-color: #2ea7e0;}
+.cloud-l{width: 100rpx;height: 69rpx;position: absolute;left: 0;bottom: 100rpx;opacity: 0.5;}
+.cloud-r{width: 100rpx;height: 69rpx;position: absolute;right: 0;bottom: 250rpx;opacity: 0.5;}
+
+

@@ -1,0 +1,54 @@
+{
+  "pages": [
+    "pages/start/start",
+    "pages/center/center",
+    "pages/index/index",
+    "pages/link/link",
+    "pages/questionnaire/questionnaire",
+    "pages/order/order",
+    "pages/credentials/credentials",
+    "pages/downloadapp/downloadapp",
+    "pages/mymessage/mymessage",
+    "pages/certificate/certificate",
+    "pages/msg/msg",
+    "pages/agreement/agreement",
+    "pages/signup/signup"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#a0d8ef",
+    "navigationBarTitleText": "书丸子·AI语测",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#333333",
+    "selectedColor": "#a0d8ef",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "static/icon/index.png",
+        "selectedIconPath": "static/icon/index-selected.png"
+      },
+      {
+        "pagePath": "pages/link/link",
+        "text": "联系客服",
+        "iconPath": "static/icon/link.png",
+        "selectedIconPath": "static/icon/link-selected.png"
+      },
+      {
+        "pagePath": "pages/questionnaire/questionnaire",
+        "text": "问卷调查",
+        "iconPath": "static/icon/questionnaire.png",
+        "selectedIconPath": "static/icon/questionnaire-selected.png"
+      },
+      {
+        "pagePath": "pages/center/center",
+        "text": "个人中心",
+        "iconPath": "static/icon/center.png",
+        "selectedIconPath": "static/icon/center-selected.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap71.json"
+}

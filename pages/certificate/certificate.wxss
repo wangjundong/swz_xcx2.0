@@ -1,0 +1,2 @@
+/* pages/certificate/certificate.wxss */
+.certificate{display: flex;justify-content: center;align-items: center;width: 750rpx;height: 1060rpx;margin-top: 60rpx;}

@@ -1,0 +1,20 @@
+<!--pages/downloadapp/downloadapp.wxml-->
+<view class="root">
+	<image class="cloud1" src="../../static/cloud1.png"></image>
+	<image class="cloud2" src="../../static/cloud2.png"></image>
+	<image class="city" src="../../static/city.png"></image>
+	<view class="root_content">
+		<text class="title_text title">书丸子·AI语测</text>
+		<text class="title_text">手机客户端</text>
+		<text class="content_text">与童音而遇，遇见成长的自己</text>
+
+		<view class="download_view" bindtap="android_btn">
+			<image class="android" src="../../static/android.png"></image>
+			<text>Android版下载</text>
+		</view>
+		<view class="download_view" bindtap="ios_btn">
+			<image class="ios" src="../../static/ios.png"></image>
+			<text>Iphone版下载</text>
+		</view>
+	</view>
+</view>

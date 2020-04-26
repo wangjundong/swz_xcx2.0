@@ -1,0 +1,56 @@
+<!--pages/msg/msg.wxml-->
+<view class="container">
+   <scroll-view class="msg-list" scroll-y="true" bindscrolltolower="lower" bindscroll="scroll">
+    <view class="list-item">
+       <text class="msg-title">书丸子书丸子书丸子书丸子书丸子书丸子书丸子书丸子书丸子书丸子书丸子书丸子书丸子书丸子书丸子书丸子书丸子书丸子</text>
+       <view class="time">
+        <text class="msg-empty"></text>
+        <text class="msg-time">2019年11月21日 17:25</text>
+       </view>
+    </view>
+    <view class="list-item">
+       <text class="msg-title">书丸子书丸子书丸子书丸子书丸子书丸子书丸子书丸子书丸子书丸子书丸子书丸子书丸子书丸子书丸子书丸子书丸子书丸子</text>
+       <view class="time">
+        <text class="msg-empty"></text>
+        <text class="msg-time">2019年11月21日 17:25</text>
+       </view>
+    </view>
+    <view class="list-item">
+       <text class="msg-title">书丸子书丸子书丸子书丸子书丸子书丸子书丸子书丸子书丸子书丸子书丸子书丸子书丸子书丸子书丸子书丸子书丸子书丸子</text>
+       <view class="time">
+        <text class="msg-empty"></text>
+        <text class="msg-time">2019年11月21日 17:25</text>
+       </view>
+    </view>
+    <view class="list-item">
+       <text class="msg-title">书丸子书丸子书丸子书丸子书丸子书丸子书丸子书丸子书丸子书丸子书丸子书丸子书丸子书丸子书丸子书丸子书丸子书丸子</text>
+       <view class="time">
+        <text class="msg-empty"></text>
+        <text class="msg-time">2019年11月21日 17:25</text>
+       </view>
+    </view>
+    <view class="list-item">
+       <text class="msg-title">书丸子书丸子书丸子书丸子书丸子书丸子书丸子书丸子书丸子书丸子书丸子书丸子书丸子书丸子书丸子书丸子书丸子书丸子</text>
+       <view class="time">
+        <text class="msg-empty"></text>
+        <text class="msg-time">2019年11月21日 17:25</text>
+       </view>
+    </view>
+    <view class="list-item">
+       <text class="msg-title">书丸子书丸子书丸子书丸子书丸子书丸子书丸子书丸子书丸子书丸子书丸子书丸子书丸子书丸子书丸子书丸子书丸子书丸子</text>
+       <view class="time">
+        <text class="msg-empty"></text>
+        <text class="msg-time">2019年11月21日 17:25</text>
+       </view>
+    </view>
+    <view class="list-item">
+       <text class="msg-title">书丸子书丸子书丸子书丸子书丸子书丸子书丸子书丸子书丸子书丸子书丸子书丸子书丸子书丸子书丸子书丸子书丸子书丸子</text>
+       <view class="time">
+        <text class="msg-empty"></text>
+        <text class="msg-time">2019年11月21日 17:25</text>
+       </view>
+    </view>
+  </scroll-view>
+  <image class="msg-foot" src="/static/center/msg_foot.png"></image>
+  <image class="msg-img" src="/static/center/msg_img.png"></image>
+</view>

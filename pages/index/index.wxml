@@ -1,0 +1,117 @@
+<!--index.wxml-->
+<view class="container">
+    <swiper class='carousel_swiper' indicator-dots="true" indicator-color="#ffffff" indicator-active-color="#dadada" autoplay="true" interval='2500' circular='true'>
+    <block wx:for="{{carouselList}}" wx:key="key">
+      <swiper-item bindtap='chomeCarouselClick' data-url='{{item.url}}'>
+        <image class="carouselImg" src='{{host}}{{item.img}}' mode='aspectFill' ></image>
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="menu">
+      <view class="menu-item" style="margin-right:8.67rpx;" bindtap="go" data-index="1">
+          <image src="/static/index/icon1.png"></image>
+          <text>测评报名</text>
+      </view>
+      <view class="menu-item" style="margin-right:8.67rpx;" bindtap="go" data-index="2">
+          <image src="/static/index/icon2.png"></image>
+          <text>查看报告</text>
+      </view>
+      <view class="menu-item" style="margin-right:8.67rpx;" bindtap="go" data-index="3">
+          <image src="/static/index/icon3.png"></image>
+          <text>能力提升</text>
+      </view>
+      <view class="menu-item" bindtap="go" data-index="4">
+          <image src="/static/index/icon4.png"></image>
+          <text>测评介绍</text>
+      </view>
+  </view>
+  <view class="title">
+    <view class="title-l">
+      <text>书丸子优选课堂</text>
+      <view></view>
+    </view>
+    <view class="title-r">
+      <text decode="{{true}}">更&nbsp;&nbsp;&nbsp;多</text>
+      <image src="/static/index/right.png"></image>
+    </view>
+  </view>
+  <scroll-view class="tab-list" scroll-x="true">
+      <view class="tab-item">
+        <image src="/static/index/demo.png"></image>
+        <text>家长课堂</text>
+      </view>
+      <view class="tab-item">
+        <image src="/static/index/demo.png"></image>
+        <text>家长课堂</text>
+      </view>
+      <view class="tab-item">
+        <image src="/static/index/demo.png"></image>
+        <text>家长课堂</text>
+      </view>
+      <view class="tab-item">
+        <image src="/static/index/demo.png"></image>
+        <text>家长课堂</text>
+      </view>
+      <view class="tab-item">
+        <image src="/static/index/demo.png"></image>
+        <text>家长课堂</text>
+      </view>
+      <view class="tab-item">
+        <image src="/static/index/demo.png"></image>
+        <text>家长课堂</text>
+      </view>
+      <view class="tab-item">
+        <image src="/static/index/demo.png"></image>
+        <text>家长课堂</text>
+      </view>
+      <view class="tab-item">
+        <image src="/static/index/demo.png"></image>
+        <text>家长课堂</text>
+      </view>
+  </scroll-view>
+  <view class="title">
+    <view class="title-l">
+      <text>合作机构推荐</text>
+      <view></view>
+    </view>
+    <view class="title-r">
+      <text decode="{{true}}">更&nbsp;&nbsp;&nbsp;多</text>
+      <image src="/static/index/right.png"></image>
+    </view>
+  </view>
+  <scroll-view class="tab-list" scroll-x="true">
+      <view class="tab-item">
+        <image src="/static/index/demo.png"></image>
+        <text>家长课堂</text>
+      </view>
+      <view class="tab-item">
+        <image src="/static/index/demo.png"></image>
+        <text>家长课堂</text>
+      </view>
+      <view class="tab-item">
+        <image src="/static/index/demo.png"></image>
+        <text>家长课堂</text>
+      </view>
+      <view class="tab-item">
+        <image src="/static/index/demo.png"></image>
+        <text>家长课堂</text>
+      </view>
+      <view class="tab-item">
+        <image src="/static/index/demo.png"></image>
+        <text>家长课堂</text>
+      </view>
+      <view class="tab-item">
+        <image src="/static/index/demo.png"></image>
+        <text>家长课堂</text>
+      </view>
+      <view class="tab-item">
+        <image src="/static/index/demo.png"></image>
+        <text>家长课堂</text>
+      </view>
+      <view class="tab-item">
+        <image src="/static/index/demo.png"></image>
+        <text>家长课堂</text>
+      </view>
+  </scroll-view>
+  <image src="/static/index/footer.png" style="width:690rpx;height: 96rpx;position:fixed;bottom: 0;left:30rpx;"></image>
+</view>

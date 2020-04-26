@@ -1,0 +1,29 @@
+/**index.wxss**/
+
+.carousel_swiper{
+  width: 650rpx;
+  height: 240rpx;
+  margin: 20rpx auto 40rpx auto;
+  border-radius: 15rpx;
+  text-align: center;
+}
+.carouselImg{
+  width: 100%;
+  height: 100%;
+  border-radius: 15rpx;
+}
+.menu{width: 650rpx;height: 156rpx;display: flex;justify-content: center;align-content: center;font-size: 24rpx;color:#333333;margin: 0 auto;font-weight: 650;}
+.menu-item{box-shadow: 2px 2px 2px 2px rgba(242,242,242,0.5);display: flex;justify-content: center;align-items: center;flex-direction: column;width: 156rpx;height: 156rpx;border-radius: 10rpx;}
+.menu-item image{width: 74rpx;height: 74rpx;margin-bottom: 20rpx;}
+.title{width: 650rpx;height: 30rpx;margin: 40rpx auto 24rpx auto;display: flex;justify-content: space-between;align-items: center;}
+.title-l{display: flex;flex-direction: column;}
+.title-l text{font-size: 30rpx;font-weight: bold;z-index: 2;letter-spacing: 2rpx;}
+.title-l view{height: 9rpx;background-color: rgba(160,216,239,0.8);border-radius: 20rpx;margin-top: -9rpx;z-index: 1;}
+.title-r{display: flex;justify-content: space-between;align-items: center;}
+.title-r image{width: 10rpx;height: 16rpx;}
+.title-r text{font-size: 24rpx;color: #999999;margin-right: 20rpx;}
+.tab-list {width: 650rpx;white-space: nowrap;padding: 0 50rpx;}
+.tab-item {width: 136rpx;display:inline-block;text-align: center;margin-right: 35.5rpx;}
+.tab-item:last-child{margin-right: 0;}
+.tab-item image{width: 136rpx;height: 136rpx;border-radius: 15rpx;margin-bottom: 12rpx;float: left;}
+.tab-item text{font-size: 24rpx;color:#333333;text-align: center;float: left;font-weight: 600;width: 100rpx;margin-left: 18rpx;}

@@ -1,0 +1,10 @@
+<!--start.wxml-->
+<view class="container">
+  <view class="remind-box" wx:if="{{remind}}">
+    <image class="remind-img" src="/static/loading.gif"></image>
+  </view>
+  <block wx:else>
+    <view class="jump" bindtap="goToIndex">跳过{{time}}s</view>
+    <image class="theme" src="{{imgUrl}}"></image>
+  </block>
+</view>

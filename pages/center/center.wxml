@@ -1,0 +1,68 @@
+<!--pages/center/center.wxml-->
+<alt fail="{{fail}}" msg="{{msg}}"></alt>
+<view class="container">
+    <view class="auth-login" bindtap="authLogin">
+        <image class="cloud-r" src="/static/center/cloud-r.png"></image>
+        <image class="cloud-l" src="/static/center/cloud-l.png"></image>
+        <view class="avatar-cover">
+            <image class="avatar" src="{{avatar}}"></image>
+        </view>
+        <!-- <button wx:if="!isLogin" open-type="getUserInfo" bindgetuserinfo="getUserInfo" style="border:none;color:#ffffff;font-size:36rpx;line-height:1;margin-top: 40rpx;" plain="true" size="mini">点击登录</button> -->
+        <view wx:if="{{isLogin}}" style="border:none;color:#ffffff;font-size:36rpx;line-height:1;margin-top: 40rpx;">{{userinfo.nickname}}</view>
+        <view wx:if="{{!isLogin}}" style="border:none;color:#ffffff;font-size:36rpx;line-height:1;margin-top: 40rpx;">点击登录</view>
+        
+    </view>
+    <view class="menu">
+        <view class="menu-item" bindtap="go" data-index="1">
+          <view class="item-l">
+            <image style="width: 28rpx;height: 32rpx;" src="/static/center/order.png"></image>
+            <text>我的订单</text>
+          </view>
+          <image class="item-r" src="/static/center/goright.png"></image>
+        </view>
+        <view class="menu-item" bindtap="go" data-index="2">
+          <view class="item-l">
+            <image style="width: 27rpx;height: 34rpx;" src="/static/center/pz.png"></image>
+            <text>我的凭证</text>
+          </view>
+          <image class="item-r" src="/static/center/goright.png"></image>
+        </view>
+        <view class="menu-item" bindtap="go" data-index="3">
+          <view class="item-l">
+            <image style="width: 32rpx;height: 30rpx;" src="/static/center/baby.png"></image>
+            <text>我的宝贝</text>
+          </view>
+          <image class="item-r" src="/static/center/goright.png"></image>
+        </view>
+        <view class="menu-item" bindtap="go" data-index="4">
+          <view class="item-l">
+            <image style="width: 28rpx;height: 32rpx;" src="/static/center/zs.png"></image>
+            <text>我的证书</text>
+          </view>
+          <image class="item-r" src="/static/center/goright.png"></image>
+        </view>
+        <view class="menu-item" bindtap="go" data-index="5">
+          <view class="item-l">
+            <image style="width: 28rpx;height: 28rpx;" src="/static/center/msg.png"></image>
+            <text>我的消息</text>
+          </view>
+          <image class="item-r" src="/static/center/goright.png"></image>
+        </view>
+        <view class="empty1"></view>
+        <view class="empty2"></view>
+        <view class="menu-item" bindtap="go" data-index="6">
+          <view class="item-l">
+            <image style="width: 30rpx;height: 26rpx;" src="/static/center/fk.png"></image>
+            <text>反馈意见</text>
+          </view>
+          <image class="item-r" src="/static/center/goright.png"></image>
+        </view>
+        <view class="menu-item" style="border:none;" bindtap="go" data-index="7">
+          <view class="item-l" style="border: none;">
+            <image style="width: 28rpx;height: 28rpx;" src="/static/center/set.png"></image>
+            <text>我的设置</text>
+          </view>
+          <image class="item-r" src="/static/center/goright.png"></image>
+        </view>
+    </view>
+</view>
