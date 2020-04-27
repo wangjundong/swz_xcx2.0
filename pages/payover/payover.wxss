@@ -1,0 +1,7 @@
+/* pages/payover/payover.wxss */
+.main{width: 400rpx;margin: 100rpx auto 0 auto;display: flex;justify-content: center;align-items: center;flex-direction: column;}
+.pay{width: 299rpx;height: 74rpx;}
+.img{width: 400rpx;height: 340rpx;margin-top: 20rpx;margin-bottom: 40rpx;}
+.main text{color:#a0d8ef;font-size: 36rpx;text-align: center;}
+.show-order{width: 300rpx;height: 80rpx;text-align: center;font-size: 48rpx;color: #ffffff;line-height: 80rpx;margin-top: 100rpx;border-radius: 40rpx;background-color: #a0d8ef;}
+

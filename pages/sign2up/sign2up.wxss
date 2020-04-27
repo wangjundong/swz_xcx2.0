@@ -1,0 +1,10 @@
+/* pages/sign2up/sign2up.wxss */
+.container{background-color: #fcfaf5;width: calc(100% - 60rpx);padding: 0 30rpx;}
+.main{width:690rpx;font-size: 28rpx;color:#333333;display: flex;justify-content: center;align-items: center;flex-direction: column;background-color: #ffffff;box-shadow: 2px 5px 2px 2px rgba(200,200,200,0.2)}
+.picker{width: 600rpx;height: 68rpx;margin: 40rpx 0 0 0;display: flex;justify-content: space-between;align-items: center;background-color: #d9eff9;border-radius: 15rpx;}
+.picker cover-image{width:26rpx;height:14rpx;}
+.checkbox{width: 200rpx;display: flex;justify-content: space-around;align-items: center;}
+.checkbox text{font-size: 24rpx;color:#333333;}
+.checkbox switch{zoom:0.6;}
+.btn{width: 100%;display: flex;justify-content: center;align-items: center;font-size: 30rpx;color:#ffffff;margin:80rpx 0 40rpx 0;}
+.btn text{width: 220rpx;text-align: center;border-radius: 35rpx;height: 64rpx;line-height: 64rpx;}

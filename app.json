@@ -12,7 +12,11 @@
     "pages/certificate/certificate",
     "pages/msg/msg",
     "pages/agreement/agreement",
-    "pages/signup/signup"
+    "pages/signup/signup",
+    "pages/sign2up/sign2up",
+    "pages/sign2upAddress/address",
+    "pages/sign3up/sign3up",
+    "pages/payover/payover"
   ],
   "window": {
     "backgroundTextStyle": "light",

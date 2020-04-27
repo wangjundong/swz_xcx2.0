@@ -12,7 +12,9 @@ if (env == 1)
     getTheme: 'App.SwzXcx_v2_Other.GetTheme',
     getOrderList: 'App.SwzXcx_v1_Wechat.GetOrderList',
     getOpenidByCode:'App.SwzXcx_v1_Wechat.GetOpenid',
-    authLogin: 'App.SwzXcx_v1_Member.AuthLogin'
+    authLogin: 'App.SwzXcx_v1_Member.AuthLogin',
+    getNation: 'App.SwzXcx_v1_Nation.GetNationList',
+    getPhoneNumber: 'App.SwzXcx_v1_Wechat.GetPhoneNumber'
   };
 else
   params = {
@@ -22,7 +24,9 @@ else
     getTheme: 'App.SwzXcx_v2_Other.GetTheme',
     getOrderList: 'App.SwzXcx_v1_Wechat.GetOrderList',
     getOpenidByCode: 'App.SwzXcx_v1_Wechat.GetOpenid',
-    authLogin: 'App.SwzXcx_v1_Member.AuthLogin'
+    authLogin: 'App.SwzXcx_v1_Member.AuthLogin',
+    getNation: 'App.SwzXcx_v1_Nation.GetNationList',
+    getPhoneNumber: 'App.SwzXcx_v1_Wechat.GetPhoneNumber'
   };
 
 function sortApi(obj, timestamp) {

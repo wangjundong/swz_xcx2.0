@@ -1,8 +1,9 @@
 <!--pages/signup/signup.wxml-->
+<alt fail="{{fail}}" msg="{{msg}}" jump="{{jump}}"></alt>
 <view class="container">
   <camera class="camera" mode="normal" device-position="{{back}}" flash="off" binderror="error" style="width: 100%; height: 100%;display:{{camera ? '' : 'none'}}">
     <cover-image bindtap="takePhoto" style="width:180rpx;height:180rpx;left:calc(50% - 90rpx);bottom:100rpx;" src="/static/index/photo.png"></cover-image>
-    <cover-image bindtap="reback" style="width:90rpx;height:90rpx;right:100rpx;bottom:150rpx;" src="/static/index/reback.png"></cover-image>
+    <cover-image class="reback" bindtap="reback" style="width:90rpx;height:90rpx;right:100rpx;bottom:150rpx;" src="/static/index/reback.png"></cover-image>
   </camera>
   <view class="sign-top"></view>
   <view class="main">
@@ -15,60 +16,62 @@
       <view class="form">
           <view class="input-item" style="background-color:#a0d8ef;">
               <image style="width:32rpx;height:36rpx;margin-left: 30rpx;" src="/static/signup/name.png"></image>
-              <input class="ipt" type="text" selection-start="60" placeholder-class="placeholder_class" placeholder="请输入孩子的姓名"></input>
+              <input class="ipt" bindblur="val" data-index="name" type="text" selection-start="60" placeholder-class="placeholder_class" placeholder="请输入孩子的姓名"></input>
           </view>
 
-          <view class="input-item" style="background-color:#d4e83f;">
+          <view style="background-color:#d4e83f;" class="input-item">
               <image style="width:35rpx;height:35rpx;margin-left: 30rpx;" src="/static/signup/date.png"></image>
-              <picker mode="date" bindchange="pickerChange" id="birthday">
+              <picker class="picker" mode="date" bindchange="pickerChange" id="birthday">
                 <input type="text" disabled="true" class="ipt" value="{{birthday_val.show||''}}" placeholder="请选择孩子的生日" placeholder-class="placeholder_class"></input>
+                <cover-image class="bjt" src="/static/signup/bjt.png"></cover-image>
               </picker>
-              <image class="bjt" src="/static/signup/bjt.png"></image>
           </view>
 
           <view class="input-item" style="background-color:#f1adb6;">
               <image style="width:36rpx;height:35rpx;margin-left: 30rpx;" src="/static/signup/nation.png"></image>
-              <picker range="{{nation}}" mode="selector" bindchange="pickerChange" id="nation">
+              <picker class="picker" range="{{nation}}" mode="selector" bindchange="pickerChange" id="nation">
                 <input class="ipt" disabled="true" type="text" value="{{nation_val.show||''}}" placeholder-class="placeholder_class" placeholder="请选择孩子的民族"></input>
+              <cover-image class="bjt" src="/static/signup/bjt.png"></cover-image>
               </picker>
-              <image class="bjt" src="/static/signup/bjt.png"></image>
+              
           </view>
 
           <view class="input-item" style="background-color:#f3cea4;">
               <image style="width:36rpx;height:31rpx;margin-left: 30rpx;" src="/static/signup/sex.png"></image>
-              <picker range="{{sex}}" mode="selector" bindchange="pickerChange" id="sex">
+              <picker class="picker" range="{{sex}}" mode="selector" bindchange="pickerChange" id="sex">
                 <input class="ipt" disabled="true" type="text" value="{{sex_val.show||''}}" placeholder-class="placeholder_class" placeholder="请选择孩子的性别"></input>
+                <cover-image class="bjt" src="/static/signup/bjt.png"></cover-image>
               </picker>
-              <image class="bjt" src="/static/signup/bjt.png"></image>
+              
           </view>
           <view class="input-item border">
-            <text style="color:#333333;font-size:28rpx;margin-left:30rpx;">家长姓名</text>
-            <input style="color:#333333;margin-right:20rpx;" type="text" placeholder-style="color:#999999;font-size:24rpx;text-align:right;" placeholder="请输入家长姓名"></input>
+            <text style="color:#333333;font-size:28rpx;margin-left:30rpx;margin-right:30rpx;">家长姓名</text>
+            <input bindblur="val" data-index="parents_name" style="color:#333333;margin-right:20rpx;" type="text" placeholder-style="color:#999999;font-size:24rpx;text-align:right;" placeholder="请输入家长姓名"></input>
           </view>
-         <view class="input-item border">
+         <view class="input-item border" style="display:flex;justify-content: space-between;">
             <text style="color:#333333;font-size:28rpx;margin-left:30rpx;">家长与孩子的关系</text>
-            <picker range="{{sex}}" mode="selector" bindchange="pickerChange" id="relationship">
-              <input style="color:#333333;margin-right:20rpx;width:100rpx;" disabled="true" type="text" placeholder-style="color:#999999;font-size:24rpx;text-align:right;"></input>
+            <picker class="picker" range="{{relationship}}" mode="selector" bindchange="pickerChange" id="relationship">
+              <input style="color:#333333;margin-right:20rpx;width:192rpx;float:left;margin-left:30rpx;" disabled="true" type="text" placeholder-style="color:#999999;font-size:24rpx;text-align:right;" value="{{relationship_val.show||''}}"></input>
+              <cover-image style="width:26rpx;height:14rpx;margin-top:20rpx;margin-right:20rpx;" src="/static/signup/hjt.png"></cover-image>
             </picker>
-            <image style="width:26rpx;height:14rpx;margin-right:20rpx;" src="/static/signup/hjt.png"></image>
           </view>
-          <view class="input-item border">
+          <view class="input-item border" style="display:flex;justify-content: space-between;"> 
             <text style="color:#333333;font-size:28rpx;margin-left:20rpx;">家长联系电话</text>
-            <!-- <input style="color:#333333;margin-left:30rpx;" type="text" placeholder-style="color:#999999;font-size:24rpx;text-align:right;" placeholder=""></input> -->
-            <view style="width:120rpx;height:36rpx;lien-height:36rpx;font-size:20rpx;color:#ffffff;background-color:#a0d8ef;border-radius:20rpx;text-align:center;line-height:36rpx;margin-right:20rpx;">获取手机号</view>
+            <!-- <input  bindblur="val" data-index="tel" style="color:#333333;margin-left:30rpx;" type="text" placeholder-style="color:#999999;font-size:24rpx;text-align:right;" placeholder=""></input> -->
+            <button open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber" style="width:160rpx;height:36rpx;line-height:36rpx;font-size:20rpx;color:#ffffff;background-color:#a0d8ef;border-radius:20rpx;text-align:center;margin-right:20rpx;" type="mini">获取手机号</button>
           </view>
           <view class="input-item border">
             <text style="color:#333333;font-size:28rpx;margin-left:20rpx;">紧急联系人姓名</text>
-            <input style="color:#333333;margin-left:30rpx;" type="text" placeholder-style="color:#999999;font-size:24rpx;text-align:right;" placeholder=""></input>
+            <input bindblur="val" data-index="link_name" style="color:#333333;margin-left:30rpx;" type="text" placeholder-style="color:#999999;font-size:24rpx;text-align:right;" placeholder=""></input>
           </view>
           <view class="input-item border">
             <text style="color:#333333;font-size:28rpx;margin-left:20rpx;">紧急联系人电话</text>
-            <input style="color:#333333;margin-left:20rpx;" type="text" placeholder-style="color:#999999;font-size:24rpx;text-align:right;" placeholder=""></input>
+            <input bindblur="val" data-index="link_tel" style="color:#333333;margin-left:20rpx;" type="text" placeholder-style="color:#999999;font-size:24rpx;text-align:right;" placeholder=""></input>
           </view>
       </view>
       <view class="btn">
-        <text style="background-color:#f3cea4;margin-right: 120rpx;">取消</text>
-        <text style="background-color:#a0d8ef;">下一步</text>
+        <text bindtap="cancel" style="background-color:#f3cea4;margin-right: 120rpx;">取消</text>
+        <text bindtap="next" style="background-color:#a0d8ef;">下一步</text>
       </view>
   </view>
 </view>

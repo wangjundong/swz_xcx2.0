@@ -5,6 +5,6 @@
   </view>
   <block wx:else>
     <view class="jump" bindtap="goToIndex">跳过{{time}}s</view>
-    <image class="theme" src="{{imgUrl}}"></image>
+    <image bindload="timer" class="theme" src="{{imgUrl}}"></image>
   </block>
 </view>

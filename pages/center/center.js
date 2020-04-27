@@ -53,7 +53,7 @@ Page({
     // 获取用户信息
     let userInfo = wx.getStorageSync('userInfo')||'';
     console.log(userInfo);
-    if(userInfo){
+    if(userInfo&&userInfo.uid){
       this.setData({ userinfo: userInfo });
       this.setData({ isLogin: true });
       this.setData({ avatar: userInfo.avatar});

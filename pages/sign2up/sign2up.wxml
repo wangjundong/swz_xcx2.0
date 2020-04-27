@@ -1,0 +1,47 @@
+<!--pages/sign2up/sign2up.wxml-->
+<alt fail="{{fail}}" msg="{{msg}}" jump="{{jump}}"></alt>
+<view class="container">
+    <view class="main">
+        <view class="picker" bindtap="selectAddress">
+          <text style="float:left;margin-left:20rpx;line-height:68rpx;">测试地点选择</text>
+          <input style="float:left;height:68rpx;margin-left:20rpx;line-height:68rpx;color:#999999;width:300rpx;" value="" disabled="true" type="text"></input>
+          <image style="margin-left:20rpx;margin-right:20rpx;width:26rpx;height:14rpx;" src="/static/signup/hjt.png" class="hjt"></image>
+        </view>
+        <view class="picker">
+          <text style="float:left;margin-left:20rpx;line-height:68rpx;">方言情况</text>
+          <view class="checkbox">
+            <text>不会</text>
+            <switch color="#2bb2e8" checked="checked" bindchange="switch2Change"/>
+            <text style="margin-right:5rpx;">会</text>
+          </view>
+        </view>
+        <view class="picker">
+          <text style="float:left;margin-left:20rpx;line-height:68rpx;">民族语情况</text>
+          <view class="checkbox">
+            <text>不会</text>
+            <switch color="#2bb2e8" checked="checked" bindchange="switch2Change"/>
+            <text style="margin-right:5rpx;">会</text>
+          </view>
+        </view>
+        <view class="picker">
+          <text style="float:left;margin-left:20rpx;line-height:68rpx;">请输入民族语</text>
+          <input style="float:left;height:68rpx;margin-left:20rpx;line-height:68rpx;color:#999999;width:330rpx;" value="" type="text"></input>
+        </view>
+        <view style="width: 600rpx;height: 168rpx;margin: 40rpx 0;display: flex;justify-content: center;align-items: center;flex-direction: column;background-color: #d9eff9;border-radius: 15rpx;">
+          <view style="display: flex;justify-content: space-between;align-items: center;width:100%;">
+            <text style="float:left;margin-left:20rpx;line-height:68rpx;">孩子是否会对酒精过敏</text>
+            <view class="checkbox">
+              <text>不会</text>
+              <switch color="#2bb2e8" checked="checked" bindchange="switch2Change"/>
+              <text style="margin-right:5rpx;">会</text>
+            </view>
+          </view>
+          <text style="padding:0 20rpx;text-align: justify;color:#2ea7e0;font-size:24rpx;margin-bottom:30rpx;">温馨提示：为了宝贝的健康，与皮肤接触的设备会使用酒精进行消毒。</text>
+        </view>
+        <view class="btn">
+        <text bindtap="cancel" style="background-color:#f3cea4;margin-right: 120rpx;">上一步</text>
+        <text bindtap="next" style="background-color:#a0d8ef;">下一步</text>
+      </view>
+    </view>
+    <image style="width:100%;height:201rpx;position: absolute;bottom:0;" src="/static/signup/footer.png"></image>
+</view>

@@ -1,0 +1,7 @@
+/* pages/sign3up/sign3up.wxss */
+.top{width: 100%;height: 140rpx;background-color: #a0d8ef;display: flex;justify-content: center;align-items: center;}
+.top image{width: 180rpx;height: 180rpx;border-radius: 50%;margin-bottom: -110rpx;}
+.content{width: 640rpx;margin: 110rpx 55rpx 40rpx 55rpx;border-radius: 15rpx;display: flex;align-items: center;flex-direction: column;font-size: 28rpx;color:#b3b3b3;height: 832rpx;border-top: 2px solid #a0d8ef;border-right: 2px solid #a0d8ef;border-left: 2px solid #a0d8ef;}
+.content-item{width:calc(100% - 60rpx);min-height: 48rpx;display: flex;justify-content: space-between;align-items: center;margin-top: 30rpx;padding: 0 30rpx;}
+.item-t1{width: 120rpx;line-height: 48rpx;margin-right: 20rpx;}
+.item-t2{width: 400rpx;background-color: #f7f7f7;border-radius: 10rpx;text-align: center;color:#666666;display: flex;justify-content: center;align-items: center;}

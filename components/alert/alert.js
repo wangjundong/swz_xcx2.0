@@ -9,6 +9,9 @@ Component({
     },
     fail: {
       type: Boolean
+    },
+    jump: {
+      type: Boolean
     }
   },
 
@@ -26,6 +29,13 @@ Component({
   methods: {
     closeAlt: function(){
       this.setData({msg:''});
+      if(this.data.jump==true){
+        console.log(11111);
+        wx.switchTab({
+          url: '/pages/center/center'
+        })
+      }
+        
     }
   }
 })

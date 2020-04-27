@@ -1,0 +1,45 @@
+<!--pages/sign3up/sign3up.wxml-->
+<alt fail="{{fail}}" msg="{{msg}}" jump="{{jump}}"></alt>
+<view class="container">
+    <view class="top">
+        <image src="/static/center/avatar1.png"></image>
+    </view>
+    <view class="content">
+        <view class="content-item">
+          <text class="item-t1" decode="{{true}}">姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名</text>
+          <view class="item-t2">坨坨花花</view>
+        </view>
+        <view class="content-item">
+          <text class="item-t1" decode="{{true}}">年&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;龄</text>
+          <view class="item-t2">坨坨花花</view>
+        </view>
+        <view class="content-item">
+          <text class="item-t1" decode="{{true}}">民&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;族</text>
+          <view class="item-t2">坨坨花花</view>
+        </view>
+        <view class="content-item">
+          <text class="item-t1" decode="{{true}}">出生日期</text>
+          <view class="item-t2">坨坨花花</view>
+        </view>
+        <view class="content-item">
+          <text class="item-t1" decode="{{true}}">幼儿园</text>
+          <view class="item-t2">云铜时代之窗云铜时代之窗云铜时代之窗云铜时代之窗云铜时代之窗云铜时代之窗</view>
+        </view>
+        <view class="content-item">
+          <text class="item-t1" decode="{{true}}">班&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;级</text>
+          <view class="item-t2">坨坨花花</view>
+        </view>
+        <view class="content-item">
+          <text class="item-t1" decode="{{true}}">报名时间</text>
+          <view class="item-t2">坨坨花花</view>
+        </view>
+        <view class="content-item">
+          <text class="item-t1" decode="{{true}}">测试时间</text>
+          <view class="item-t2">坨坨花花</view>
+        </view>
+        <view class="content-item">
+          <text class="item-t1" decode="{{true}}">测试地点</text>
+          <view class="item-t2">云铜时代之窗云铜时代之窗云铜时代之窗云铜时代之窗云铜时代之窗云铜时代之窗</view>
+        </view>
+    </view>
+</view>

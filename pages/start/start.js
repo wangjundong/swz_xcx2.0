@@ -51,15 +51,7 @@ Page({
         remind: ''
       });
     }, 1000);
-    // 倒计时展示启动图
-    that.data.timer = setInterval(function(){
-      if(that.data.time>=1)
-        that.data.time -= 1;
-      that.setData({time:that.data.time});
-      if (that.data.time==0){
-        that.goToIndex();
-      }
-    },1000);
+    
   },
   // 跳转到首页
   goToIndex: function () {
@@ -89,4 +81,16 @@ Page({
       }
     })
   },
+  timer: function(){
+    // 倒计时展示启动图
+    let that = this;
+    that.data.timer = setInterval(function () {
+      if (that.data.time >= 1)
+        that.data.time -= 1;
+      that.setData({ time: that.data.time });
+      if (that.data.time == 0) {
+        that.goToIndex();
+      }
+    }, 1000);
+  }
 });

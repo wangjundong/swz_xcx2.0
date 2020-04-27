@@ -1,0 +1,36 @@
+<!--pages/sign2upAddress/address.wxml-->
+<alt fail="{{fail}}" msg="{{msg}}" jump="{{jump}}"></alt>
+<view class="container">
+  <view class="main">
+      <view class="search">
+        <image src="/static/signup/search.png"></image>
+        <input style="width:calc(100% - 64rpx);height:60rpx;line-height:60rpx;color:#999999;font-size:32rpx;" type="text" placeholder="请输入幼儿园或机构名称查询" placeholder-class="placeholder_class"></input>
+      </view>
+      <text style="font-size:30rpx;color:#333333;line-height:1;margin-bottom:10rpx;font-weight:550">选择测试地点</text>
+      <view class="select">
+        <text style="color:#2ea7e0;">省份</text>
+        <text>城市</text>
+        <text>区县</text>
+        <text>幼儿园</text>
+        <text>班级</text>
+      </view>
+      <scroll-view class="scroll-view-h" scroll-y="true">
+          <text>云南省1</text>
+          <text>云南省2</text>
+          <text>云南省3</text>
+          <text>云南省4</text>
+          <text>云南省5</text>
+          <text>云南省6</text>
+          <text>云南省7</text>
+          <text>云南省8</text>
+          <text>云南省1</text>
+          <text>云南省2</text>
+          <text>云南省3</text>
+          <text>云南省4</text>
+          <text>云南省5</text>
+          <text>云南省6</text>
+          <text>云南省7</text>
+          <text>云南省8</text>
+      </scroll-view>
+  </view>
+</view>
